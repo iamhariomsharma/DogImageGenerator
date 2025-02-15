@@ -20,11 +20,9 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             DogsLibraryTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    DogsNavGraph(
-                        modifier = Modifier.padding(innerPadding)
-                    )
-                }
+                DogsNavGraph(
+                    modifier = Modifier.fillMaxSize()
+                )
             }
         }
     }
